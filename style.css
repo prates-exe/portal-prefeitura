@@ -57,10 +57,15 @@ body {
   z-index: 1000;
 }
 
+/* CONTÊINER GLOBAL CORRIGIDO (Agora os blocos ficam um embaixo do outro por padrão) */
 .container {
   max-width: 1200px;
   width: 90%;
   margin: auto;
+}
+
+/* O Menu é o único lugar que precisa alinhar os itens lado a lado (Logo - Menu) */
+.menu .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -630,10 +635,9 @@ body {
    PÁGINA: TRANSPARÊNCIA (NOVO DESIGN FLUTUANTE)
 ========================= */
 
-/* Cabeçalho Azul com visual Institucional */
 .page-header {
   background: var(--primary);
-  padding: 70px 0 110px; /* Mais espaço embaixo para o cartão flutuar por cima */
+  padding: 70px 0 110px;
   text-align: center;
 }
 
@@ -646,23 +650,21 @@ body {
 
 .page-header .page-subtitle {
   font-size: 18px;
-  color: #bfdbfe; /* Um azul mais claro para o subtítulo */
+  color: #bfdbfe;
   max-width: 600px;
   margin: 0 auto;
 }
 
-/* Ajuste da seção principal para acomodar o cartão */
 .transparencia-section {
-  padding: 0 0 80px; /* Removido o padding do topo */
+  padding: 0 0 80px;
 }
 
-/* O Lindo Cartão de Busca e Filtro Unificado */
 .search-filter-card {
   background: var(--bg-surface);
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-lg);
   padding: 30px;
-  margin-top: -60px; /* MÁGICA: Puxa o cartão pra cima do cabeçalho azul */
+  margin-top: -60px; /* Faz o cartão flutuar por cima do cabeçalho */
   margin-bottom: 40px;
   position: relative;
   z-index: 10;
@@ -672,7 +674,6 @@ body {
   border: 1px solid var(--border-color);
 }
 
-/* Input da Busca dentro do Cartão */
 .search-box-modern {
   display: flex;
   align-items: center;
@@ -701,7 +702,6 @@ body {
   font-family: inherit;
 }
 
-/* Botões de Categoria organizados abaixo da busca */
 .category-filters-modern {
   display: flex;
   gap: 12px;
@@ -727,7 +727,7 @@ body {
 }
 
 .filter-btn.active {
-  background: #eff6ff; /* Fundo azul bem clarinho */
+  background: #eff6ff;
   color: var(--primary-hover);
   border-color: #bfdbfe;
   font-weight: 600;

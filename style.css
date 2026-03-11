@@ -57,14 +57,12 @@ body {
   z-index: 1000;
 }
 
-/* CONTÊINER GLOBAL CORRIGIDO (Agora os blocos ficam um embaixo do outro por padrão) */
 .container {
   max-width: 1200px;
   width: 90%;
   margin: auto;
 }
 
-/* O Menu é o único lugar que precisa alinhar os itens lado a lado (Logo - Menu) */
 .menu .container {
   display: flex;
   align-items: center;
@@ -632,7 +630,7 @@ body {
 }
 
 /* =========================
-   PÁGINA: TRANSPARÊNCIA (NOVO DESIGN FLUTUANTE)
+   PÁGINA: TRANSPARÊNCIA
 ========================= */
 
 .page-header {
@@ -664,7 +662,7 @@ body {
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-lg);
   padding: 30px;
-  margin-top: -60px; /* Faz o cartão flutuar por cima do cabeçalho */
+  margin-top: -60px;
   margin-bottom: 40px;
   position: relative;
   z-index: 10;
@@ -733,17 +731,23 @@ body {
   font-weight: 600;
 }
 
-/* Estilo da Tabela */
+/* =========================
+   A TABELA (SOLUÇÃO DEFINITIVA PARA O CELULAR)
+========================= */
 .table-container {
   background: var(--bg-surface);
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-sm);
   border: 1px solid var(--border-color);
-  overflow: hidden;
+  /* A MÁGICA REAL AQUI: Libera o scroll horizontal suave */
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 .data-table {
   width: 100%;
+  /* Trava a largura mínima da tabela. Ela nunca vai se espremer, mantendo o design lindo! */
+  min-width: 800px;
   border-collapse: collapse;
   text-align: left;
 }
@@ -869,7 +873,7 @@ body {
     gap: 15px;
   }
 
-  /* Ajustes do Cartão Flutuante para Celular */
+  /* Ajustes do Cartão de Pesquisa Flutuante para Celular */
   .search-filter-card {
     padding: 20px;
     margin-top: -40px;
@@ -880,47 +884,8 @@ body {
     align-items: stretch;
   }
 
-  /* MÁGICA DA TABELA RESPONSIVA */
-  .data-table thead {
-    display: none;
-  }
-
-  .data-table,
-  .data-table tbody,
-  .data-table tr,
-  .data-table td {
-    display: block;
-    width: 100%;
-  }
-
-  .data-table tr {
-    margin-bottom: 15px;
-    border: 1px solid var(--border-color);
-    border-radius: var(--radius-md);
-    background: #fff;
-    padding: 10px;
-  }
-
-  .data-table td {
-    text-align: right;
-    padding: 10px 15px;
-    position: relative;
-    border-bottom: 1px solid #f3f4f6;
-  }
-
-  .data-table td:last-child {
-    border-bottom: none;
-  }
-
-  .data-table td::before {
-    content: attr(data-label);
-    position: absolute;
-    left: 15px;
-    width: 45%;
-    text-align: left;
-    font-weight: 600;
-    color: var(--text-dark);
-  }
+  /* NOTA: Removi TODO o código de transformar a tabela em cartões.
+     Agora ela usa o scroll horizontal nativo da classe .table-container! */
 }
 
 @media (max-width: 500px) {

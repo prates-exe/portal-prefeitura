@@ -1,0 +1,449 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prefeitura de Sua Cidade - Início</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header class="menu">
+      <div class="container">
+        <div class="logo-area">
+          <img
+            src="img/logo-prefeitura.png"
+            alt="Logo Prefeitura"
+            class="logo-img"
+            onerror="this.src = 'https://via.placeholder.com/48?text=Logo'"
+          />
+          <div class="logo-text">
+            <span class="logo-top">Prefeitura de</span>
+            <span class="logo-bottom">Sua Cidade</span>
+          </div>
+        </div>
+
+        <nav class="nav-menu" aria-label="Menu Principal">
+          <ul>
+            <li><a href="index.html" class="active-link">Início</a></li>
+            <li><a href="#">A Cidade</a></li>
+            <li><a href="#">Serviços</a></li>
+            <li><a href="transparencia.html">Transparência</a></li>
+            <li><a href="#">Contato</a></li>
+          </ul>
+        </nav>
+
+        <button
+          class="menu-toggle"
+          aria-label="Abrir menu"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <section class="hero" aria-label="Destaques">
+      <div class="carousel">
+        <div class="slide active">
+          <img
+            src="img/banner1.png"
+            alt="Portal de Serviços"
+            onerror="
+              this.src =
+                'https://via.placeholder.com/1200x450/2563eb/ffffff?text=Banner+1'
+            "
+          />
+          <div class="hero-content">
+            <h1>Portal de Serviços</h1>
+            <p>Acesse rapidamente os principais serviços da prefeitura.</p>
+            <a href="#" class="hero-btn">Acessar Serviços</a>
+          </div>
+        </div>
+
+        <div class="slide">
+          <img
+            src="img/banner2.png"
+            alt="Transparência Pública"
+            onerror="
+              this.src =
+                'https://via.placeholder.com/1200x450/111827/ffffff?text=Banner+2'
+            "
+          />
+          <div class="hero-content">
+            <h1>Transparência Pública</h1>
+            <p>Consulte dados, relatórios e informações oficiais da cidade.</p>
+            <a href="transparencia.html" class="hero-btn">Ver Transparência</a>
+          </div>
+        </div>
+
+        <div class="slide">
+          <img
+            src="img/banner3.png"
+            alt="Turismo e Cultura"
+            onerror="
+              this.src =
+                'https://via.placeholder.com/1200x450/4b5563/ffffff?text=Banner+3'
+            "
+          />
+          <div class="hero-content">
+            <h1>Turismo e Cultura</h1>
+            <p>Conheça os pontos turísticos e eventos da cidade.</p>
+            <a href="#" class="hero-btn">Explorar Cidade</a>
+          </div>
+        </div>
+
+        <div class="dots" aria-label="Controles do carrossel">
+          <button class="dot active" aria-label="Ir para o slide 1"></button>
+          <button class="dot" aria-label="Ir para o slide 2"></button>
+          <button class="dot" aria-label="Ir para o slide 3"></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="services">
+      <div class="container services-container">
+        <header class="services-header center-header">
+          <h2 class="section-title">Serviços ao Cidadão</h2>
+          <p class="section-subtitle">
+            Acesse rapidamente os principais serviços digitais da prefeitura.
+          </p>
+        </header>
+
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="28"
+                height="28"
+                fill="var(--primary)"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 12c2.7 0 5-2.3 5-5s-2.3-5-5-5-5 2.3-5 5 2.3 5 5 5zm0 2c-4.4 0-8 2.7-8 6v2h16v-2c0-3.3-3.6-6-8-6z"
+                />
+              </svg>
+            </div>
+            <h3>Portal do Cidadão</h3>
+            <p>Acesse serviços digitais e acompanhe solicitações online.</p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="28"
+                height="28"
+                viewBox="0 0 24 24"
+                fill="var(--primary)"
+              >
+                <path d="M12 2L3 7v13h18V7l-9-5zM5 9l7-3.5L19 9v9H5V9z" />
+              </svg>
+            </div>
+            <h3>IPTU</h3>
+            <p>Consulte débitos e emita segunda via de boletos municipais.</p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="28"
+                height="28"
+                fill="var(--primary)"
+                viewBox="0 0 24 24"
+              >
+                <path d="M6 2h9l5 5v15H6z" />
+              </svg>
+            </div>
+            <h3>Protocolos</h3>
+            <p>Consulte o andamento de processos administrativos.</p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="28"
+                height="28"
+                fill="var(--primary)"
+                viewBox="0 0 24 24"
+              >
+                <path d="M4 4h16v10H7l-3 3V4z" />
+              </svg>
+            </div>
+            <h3>Ouvidoria</h3>
+            <p>
+              Envie sugestões ou reclamações para a administração municipal.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="news">
+      <div class="container news-container">
+        <header class="news-header center-header">
+          <h2 class="section-title">Notícias</h2>
+          <p class="section-subtitle">
+            Acompanhe as principais ações e novidades da prefeitura.
+          </p>
+        </header>
+
+        <div class="news-track-container">
+          <div class="news-track">
+            <article class="news-card">
+              <img
+                src="img/noticia1.jpg"
+                alt="Evento na cidade"
+                class="news-image"
+                onerror="
+                  this.src =
+                    'https://via.placeholder.com/400x200?text=Imagem+Notícia'
+                "
+              />
+              <div class="news-content">
+                <span class="news-date">12 Mar 2026</span>
+                <h3>Prefeitura inaugura novo espaço cultural</h3>
+                <p>
+                  O novo espaço será utilizado para eventos culturais e
+                  atividades da comunidade.
+                </p>
+                <a href="#" class="news-link">Ler mais</a>
+              </div>
+            </article>
+
+            <article class="news-card">
+              <img
+                src="img/noticia2.jpg"
+                alt="Obras urbanas"
+                class="news-image"
+                onerror="
+                  this.src =
+                    'https://via.placeholder.com/400x200?text=Imagem+Notícia'
+                "
+              />
+              <div class="news-content">
+                <span class="news-date">10 Mar 2026</span>
+                <h3>Obras de pavimentação avançam em novos bairros</h3>
+                <p>
+                  As melhorias fazem parte do plano de mobilidade urbana da
+                  cidade.
+                </p>
+                <a href="#" class="news-link">Ler mais</a>
+              </div>
+            </article>
+
+            <article class="news-card">
+              <img
+                src="img/noticia3.jpg"
+                alt="Programa social"
+                class="news-image"
+                onerror="
+                  this.src =
+                    'https://via.placeholder.com/400x200?text=Imagem+Notícia'
+                "
+              />
+              <div class="news-content">
+                <span class="news-date">08 Mar 2026</span>
+                <h3>Programa social beneficia centenas de famílias</h3>
+                <p>
+                  A iniciativa fortalece políticas públicas de assistência
+                  social.
+                </p>
+                <a href="#" class="news-link">Ler mais</a>
+              </div>
+            </article>
+
+            <article class="news-card">
+              <img
+                src="img/noticia4.jpg"
+                alt="Vacinação"
+                class="news-image"
+                onerror="
+                  this.src =
+                    'https://via.placeholder.com/400x200?text=Imagem+Notícia'
+                "
+              />
+              <div class="news-content">
+                <span class="news-date">05 Mar 2026</span>
+                <h3>Campanha de vacinação atinge a meta</h3>
+                <p>
+                  A secretaria de saúde informa que mais de 90% da população já
+                  foi imunizada.
+                </p>
+                <a href="#" class="news-link">Ler mais</a>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="news-controls">
+          <button class="news-btn prev" aria-label="Notícia anterior">❮</button>
+          <button class="news-btn next" aria-label="Próxima notícia">❯</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="departments">
+      <div class="container departments-container">
+        <header class="departments-header center-header">
+          <h2 class="section-title">Secretarias</h2>
+          <p class="section-subtitle">
+            Conheça as áreas responsáveis pelos serviços públicos municipais.
+          </p>
+        </header>
+
+        <div class="departments-grid">
+          <div class="department-card">
+            <div class="department-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="28"
+                height="28"
+                fill="var(--primary)"
+                viewBox="0 0 24 24"
+              >
+                <path d="M10 3h4v7h7v4h-7v7h-4v-7H3v-4h7z" />
+              </svg>
+            </div>
+            <h3>Saúde</h3>
+          </div>
+          <div class="department-card">
+            <div class="department-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="28"
+                height="28"
+                viewBox="0 0 24 24"
+                fill="var(--primary)"
+              >
+                <path d="M12 3L1 9l11 6 9-4.9V17h2V9L12 3z" />
+              </svg>
+            </div>
+            <h3>Educação</h3>
+          </div>
+          <div class="department-card">
+            <div class="department-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="28"
+                height="28"
+                viewBox="0 0 24 24"
+                fill="var(--primary)"
+              >
+                <path
+                  d="M22 19l-6.3-6.3c.5-1.3.2-2.8-.8-3.8-1.2-1.2-3-1.5-4.5-.8l2.6 2.6-1.4 1.4-2.6-2.6c-.7 1.5-.4 3.3.8 4.5 1 1 2.5 1.3 3.8.8L19 22l3-3z"
+                />
+              </svg>
+            </div>
+            <h3>Obras</h3>
+          </div>
+          <div class="department-card">
+            <div class="department-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="28"
+                height="28"
+                viewBox="0 0 24 24"
+                fill="var(--primary)"
+              >
+                <path
+                  d="M12 2C8 2 5 5 5 9c0 3 2 5 5 6v3H8v2h8v-2h-2v-3c3-1 5-3 5-6 0-4-3-7-7-7z"
+                />
+              </svg>
+            </div>
+            <h3>Meio Ambiente</h3>
+          </div>
+          <div class="department-card">
+            <div class="department-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="28"
+                height="28"
+                fill="var(--primary)"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M10 2h4v6h-4V2zm-6 8h16v12H4V10zm4 3v6h2v-6H8zm6 0v6h2v-6h-2z"
+                />
+              </svg>
+            </div>
+            <h3>Administração</h3>
+          </div>
+          <div class="department-card">
+            <div class="department-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="28"
+                height="28"
+                fill="var(--primary)"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 21s-6-4.35-9-7.5C-1 9 3 3 7.5 6c1.2.8 2.5 2.1 4.5 4 2-1.9 3.3-3.2 4.5-4C21 3 25 9 21 13.5 18 16.65 12 21 12 21z"
+                />
+              </svg>
+            </div>
+            <h3>Assistência Social</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer-container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <h3>Prefeitura de Sua Cidade</h3>
+            <p>
+              Trabalhando para oferecer serviços públicos de qualidade e
+              desenvolvimento urbano.
+            </p>
+          </div>
+          <div class="footer-col">
+            <h4>Links Úteis</h4>
+            <ul>
+              <li><a href="transparencia.html">Portal da Transparência</a></li>
+              <li><a href="#">Ouvidoria</a></li>
+              <li><a href="#">Licitações</a></li>
+              <li><a href="#">Diário Oficial</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Contato</h4>
+            <ul>
+              <li>Rua Exemplo, 123</li>
+              <li>(00) 0000-0000</li>
+              <li>contato@prefeitura.gov.br</li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Redes Sociais</h4>
+            <div class="social-links">
+              <a href="#">Facebook</a>
+              <a href="#">Instagram</a>
+              <a href="#">YouTube</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© 2026 Prefeitura de Sua Cidade — Todos os direitos reservados</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

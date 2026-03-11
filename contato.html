@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contato e Ouvidoria - Prefeitura</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header class="menu">
+      <div class="container">
+        <div class="logo-area">
+          <img src="img/logo-prefeitura.png" alt="Logo Prefeitura" class="logo-img" onerror="this.src='https://via.placeholder.com/48?text=Logo'" />
+          <div class="logo-text">
+            <span class="logo-top">Prefeitura de</span>
+            <span class="logo-bottom">Sua Cidade</span>
+          </div>
+        </div>
+
+        <nav class="nav-menu" aria-label="Menu Principal">
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="#">A Cidade</a></li>
+            <li><a href="#">Serviços</a></li>
+            <li><a href="transparencia.html">Transparência</a></li>
+            <li><a href="contato.html" class="active-link">Contato</a></li>
+          </ul>
+        </nav>
+
+        <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <section class="page-header">
+      <div class="container center-header">
+        <h1 class="page-title">Fale com a Prefeitura</h1>
+        <p class="page-subtitle">Canais de atendimento ao cidadão, telefones úteis e ouvidoria municipal.</p>
+      </div>
+    </section>
+
+    <main class="contact-section">
+      <div class="container contact-grid">
+        
+        <div class="contact-info-area">
+          <h2 class="contact-title">Canais de Atendimento</h2>
+          <p class="contact-desc">Utilize nossos canais oficiais para tirar dúvidas, solicitar serviços ou relatar problemas na sua região.</p>
+          
+          <div class="info-cards">
+            <div class="info-card">
+              <div class="info-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="var(--primary)" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+              </div>
+              <div>
+                <h3>Sede Administrativa</h3>
+                <p>Praça da República, nº 123 - Centro<br>CEP: 00000-000</p>
+              </div>
+            </div>
+
+            <div class="info-card">
+              <div class="info-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="var(--primary)" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+              </div>
+              <div>
+                <h3>Telefones Úteis</h3>
+                <p><strong>Recepção:</strong> (00) 0000-0000<br><strong>SAMU:</strong> 192 | <strong>Defesa Civil:</strong> 199</p>
+              </div>
+            </div>
+
+            <div class="info-card">
+              <div class="info-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="var(--primary)" viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+              </div>
+              <div>
+                <h3>Horário de Funcionamento</h3>
+                <p>Segunda a Sexta-feira<br>Das 08h às 17h</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-area">
+          <form action="#" method="POST" class="contact-form">
+            <h3 class="form-title">Envie sua Mensagem</h3>
+            
+            <div class="form-group">
+              <label for="nome">Nome Completo</label>
+              <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+            </div>
+
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+              </div>
+              <div class="form-group">
+                <label for="assunto">Assunto</label>
+                <select id="assunto" name="assunto" required>
+                  <option value="" disabled selected>Selecione uma opção</option>
+                  <option value="ouvidoria">Ouvidoria (Reclamação)</option>
+                  <option value="sugestao">Sugestão de Melhoria</option>
+                  <option value="duvida">Dúvida Geral</option>
+                  <option value="elogio">Elogio</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="mensagem">Mensagem</label>
+              <textarea id="mensagem" name="mensagem" rows="5" placeholder="Descreva sua solicitação com detalhes..." required></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Enviar Mensagem</button>
+          </form>
+        </div>
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <h3>Prefeitura de Sua Cidade</h3>
+            <p>Trabalhando para oferecer serviços públicos de qualidade e desenvolvimento urbano.</p>
+          </div>
+          <div class="footer-col">
+            <h4>Links Úteis</h4>
+            <ul>
+              <li><a href="transparencia.html">Portal da Transparência</a></li>
+              <li><a href="contato.html">Ouvidoria</a></li>
+              <li><a href="#">Licitações</a></li>
+              <li><a href="#">Diário Oficial</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Contato</h4>
+            <ul>
+              <li>Rua Exemplo, 123</li>
+              <li>(00) 0000-0000</li>
+              <li>contato@prefeitura.gov.br</li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Redes Sociais</h4>
+            <div class="social-links">
+              <a href="#">Facebook</a>
+              <a href="#">Instagram</a>
+              <a href="#">YouTube</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© 2026 Prefeitura de Sua Cidade — Todos os direitos reservados</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
